@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080914">
+    <meta name="description" content="ARCANA: descubre un universo de hechizos, alquimia, criaturas mágicas y secretos ancestrales.">
+    <title>ARCANA | Academia de Artes Arcanas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="ambient-light"></div>
+
+    <header class="header">
+        <a href="#inicio" class="logo">
+            <span class="logo-symbol">✦</span> ARCANA
+            <span class="logo-subtitle">ACADEMIA ARCANA</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+        <nav class="navigation" id="navigation">
+            <a href="#inicio">Inicio</a>
+            <a href="#grimorio">Grimorio</a>
+            <a href="#alquimia">Alquimia</a>
+            <a href="#criaturas">Criaturas</a>
+            <a href="#reliquias">Reliquias</a>
+        </nav>
+
+        <a href="#explorar" class="header-button">ENTRAR AL MUNDO</a>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="eyebrow">✧ UN UNIVERSO MÁS ALLÁ DE LO CONOCIDO ✧</span>
+                <h1>ARCANA</h1>
+                <div class="hero-divider"><span></span> ✦ <span></span></div>
+                <p class="hero-description">El conocimiento es poder.<br>La magia, una elección.</p>
+                <a href="#explorar" class="primary-button">
+                    <span>DESCUBRIR EL MUNDO ARCANO</span><span class="button-arrow">↗</span>
+                </a>
+                <p class="hero-footnote">LOS SECRETOS ESPERAN A QUIENES SE ATREVEN A BUSCARLOS</p>
+            </div>
+            <div class="hero-bottom">
+                <span>UN MUNDO DE MISTERIOS</span>
+                <span class="scroll-indicator">↓ EXPLORAR</span>
+                <span>DESDE TIEMPOS INMEMORIALES</span>
+            </div>
+        </section>
+
+        <section class="intro section-padding" id="explorar">
+            <span class="section-kicker">EL UMBRAL DEL CONOCIMIENTO</span>
+            <h2>Hay secretos que <span>nunca debieron despertar.</span></h2>
+            <p>Entre páginas olvidadas, criaturas extraordinarias y antiguos conocimientos, existe un universo que espera ser descubierto.</p>
+            <div class="ornament">✧ ───── ✦ ───── ✧</div>
+        </section>
+
+        <section class="discover section-padding">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">EXPLORA LO DESCONOCIDO</span>
+                    <h2>Las puertas de <span>ARCANA</span></h2>
+                </div>
+                <p>Cada descubrimiento abre un nuevo camino. ¿Cuál será el tuyo?</p>
+            </div>
+
+            <div class="cards-grid">
+                <article class="magic-card large-card" id="grimorio">
+                    <img src="images/grimorio.jpg" alt="Antiguo grimorio encantado">
+                    <div class="card-shade"></div>
+                    <div class="card-content">
+                        <span class="card-number">01 / CONOCIMIENTO</span>
+                        <h3>El Grimorio</h3>
+                        <p>Descubre hechizos, símbolos arcanos y poderes olvidados.</p>
+                        <button class="card-button" data-modal="spells">ABRIR GRIMORIO ↗</button>
+                    </div>
+                </article>
+
+                <article class="magic-card" id="alquimia">
+                    <img src="images/pociones.jpg" alt="Laboratorio de alquimia y pociones">
+                    <div class="card-shade"></div>
+                    <div class="card-content">
+                        <span class="card-number">02 / EXPERIMENTACIÓN</span>
+                        <h3>La Alquimia</h3>
+                        <p>Combina ingredientes y descubre recetas extraordinarias.</p>
+                        <button class="card-button" data-modal="potions">ENTRAR AL LABORATORIO ↗</button>
+                    </div>
+                </article>
+
+                <article class="magic-card" id="criaturas">
+                    <img src="images/criaturas.jpg" alt="Dragón mágico de ojos luminosos">
+                    <div class="card-shade"></div>
+                    <div class="card-content">
+                        <span class="card-number">03 / BESTIARIO</span>
+                        <h3>Las Criaturas</h3>
+                        <p>Conoce a los habitantes de mundos que escapan a toda explicación.</p>
+                        <button class="card-button" data-modal="creatures">DESCUBRIR CRIATURAS ↗</button>
+                    </div>
+                </article>
+
+                <article class="magic-card" id="reliquias">
+                    <img src="images/reliquias.jpg" alt="Colección de reliquias mágicas antiguas">
+                    <div class="card-shade"></div>
+                    <div class="card-content">
+                        <span class="card-number">04 / OBJETOS PERDIDOS</span>
+                        <h3>Las Reliquias</h3>
+                        <p>Objetos antiguos, historias ocultas y secretos sellados.</p>
+                        <button class="card-button" data-modal="relics">EXAMINAR RELIQUIAS ↗</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="spell-section section-padding">
+            <div class="spell-art"><img src="images/magia.jpg" alt="Círculo de energía mágica"></div>
+            <div class="spell-text">
+                <span class="section-kicker">TU PRIMERA LECCIÓN</span>
+                <h2>La magia comienza <span>con una intención.</span></h2>
+                <p>Cada símbolo encierra un significado. Cada palabra abre una posibilidad. Atrévete a descubrir tu primer hechizo.</p>
+                <button class="primary-button" data-modal="practice">
+                    <span>PRACTICAR UN HECHIZO</span><span class="button-arrow">✧</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="library-section section-padding">
+            <div class="library-image"><img src="images/biblioteca.jpg" alt="Biblioteca secreta de la academia"></div>
+            <div class="library-text">
+                <span class="section-kicker">SOLO PARA LOS CURIOSOS</span>
+                <h2>La biblioteca <span>de los secretos.</span></h2>
+                <p>Hay libros que cuentan historias. Otros esconden preguntas que nadie se ha atrevido a responder.</p>
+                <a href="#misterio" class="text-link">DESCUBRIR LOS MISTERIOS →</a>
+            </div>
+        </section>
+
+        <section class="mystery-section section-padding" id="misterio">
+            <span class="section-kicker">UN ÚLTIMO DESAFÍO</span>
+            <h2>No todo lo que está oculto <span>debe permanecer así.</span></h2>
+            <p>Algunos secretos solo se revelan a quienes saben dónde buscar.</p>
+            <button class="mystery-button" id="secretButton">✦ REVELAR EL MENSAJE OCULTO ✦</button>
+            <p class="secret-message" id="secretMessage" hidden>«La primera puerta nunca fue una puerta. Fue la pregunta que te atreviste a formular».</p>
+        </section>
+    </main>
+<section id="explorador-arcana">
+  <h2>🔮 Cámara de los Artefactos</h2>
+  <p>Elegí un objeto para descubrir sus secretos.</p>
+
+  <div class="artefactos">
+    <button data-artefacto="cristal">🔮<br>Bola de cristal</button>
+    <button data-artefacto="amuleto">📿<br>Amuleto antiguo</button>
+    <button data-artefacto="grimorio">📕<br>Grimorio prohibido</button>
+    <button data-artefacto="reloj">⌛<br>Reloj del tiempo</button>
+  </div>
+
+  <div id="revelacion-arcana" aria-live="polite">
+    Seleccioná un artefacto para revelar su misterio.
+  </div>
+</section>
+
+<style>
+#explorador-arcana {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  text-align: center;
+  color: #eee5ff;
+  background: #100b1c;
+  border: 1px solid #7851a9;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+#explorador-arcana h2 {
+  color: #c7a4ff;
+}
+#explorador-arcana .artefactos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+}
+#explorador-arcana .artefactos button {
+  flex: 1 1 130px;
+  max-width: 200px;
+  min-height: 100px;
+  padding: 15px;
+  color: #f4eaff;
+  background: #211631;
+  border: 1px solid #9362c9;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: background .25s, transform .25s;
+}
+#explorador-arcana .artefactos button:hover {
+  background: #493065;
+  transform: translateY(-4px);
+}
+#revelacion-arcana {
+  min-height: 70px;
+  padding: 20px;
+  line-height: 1.7;
+  background: #1a1227;
+  border-radius: 10px;
+}
+</style>
+
+<script>
+(function () {
+  const secretos = {
+    cristal: {
+      titulo: "La Bola de Cristal",
+      texto: "Una visión atraviesa la niebla: algo olvidado está esperando ser descubierto."
+    },
+    amuleto: {
+      titulo: "El Amuleto Antiguo",
+      texto: "Perteneció a una orden desaparecida. En su reverso hay un símbolo que nadie ha logrado descifrar."
+    },
+    grimorio: {
+      titulo: "El Grimorio Prohibido",
+      texto: "Entre sus páginas aparece una inscripción: «No todo conocimiento debe ser revelado»."
+    },
+    reloj: {
+      titulo: "El Reloj del Tiempo",
+      texto: "Sus agujas se detuvieron hace siglos. Sin embargo, cuando lo tocás, vuelven a moverse."
+    }
+  };
+
+  const zona = document.getElementById("explorador-arcana");
+  const resultado = document.getElementById("revelacion-arcana");
+
+  zona.querySelectorAll("[data-artefacto]").forEach(function (boton) {
+    boton.addEventListener("click", function () {
+      const objeto = secretos[boton.dataset.artefacto];
+      resultado.replaceChildren();
+
+      const titulo = document.createElement("h3");
+      titulo.textContent = objeto.titulo;
+
+      const texto = document.createElement("p");
+      texto.textContent = objeto.texto;
+
+      resultado.append(titulo, texto);
+    });
+  });
+})();
+</script>
+    <footer class="footer">
+        <a href="#inicio" class="footer-logo">✦ ARCANA ✦</a>
+        <p>Un universo de fantasía, conocimiento e imaginación.</p>
+        <span>UN PROYECTO DE MARINA991</span>
+    </footer>
+
+    <div class="modal" id="magicModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-panel">
+            <button class="modal-close" id="modalClose" aria-label="Cerrar ventana">×</button>
+            <span class="section-kicker">ARCHIVOS DE ARCANA</span>
+            <h2 id="modalTitle">El conocimiento te espera</h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,14 @@
+IMÁGENES DE ARCANA
+
+Colocá en esta carpeta las imágenes que uses para la web, con estos nombres exactos:
+
+- castillo.jpg
+- grimorio.jpg
+- pociones.jpg
+- criaturas.jpg
+- magia.jpg
+- biblioteca.jpg
+- reliquias.jpg
+
+El HTML, CSS y JavaScript ya están conectados a estos nombres.
+Las imágenes no vienen incluidas en este paquete: tenés que generarlas o descargarlas por separado.
